@@ -13,7 +13,7 @@ class ProductController extends Controller
     {
         $products = session('products', []);
         return view('products.index', compact('products'));
-    }
+    }  
 
     /**
      * Show the form for creating a new resource.

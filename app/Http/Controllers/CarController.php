@@ -9,7 +9,7 @@ class CarController extends Controller
   
     public function index()
     {
-        $cars = session('cars', []);
+        $cars = session('cars', []);   
         return view('cars.index', compact('cars'));
     }
 
