@@ -7,7 +7,7 @@
 </head> 
 <body class="bg-light">
     <div class="container my-5">
-        <h2 class="text-center mb-4">Criar Novo Carro</h2>
+        <h2 class="text-center mb-4">Criar Novo Carro</h2> 
         <form action="{{ route('carros.store') }}" method="post">
             @csrf
             <div class="mb-3">
