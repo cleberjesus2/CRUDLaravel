@@ -11,7 +11,7 @@
         <div class="card p-3">
             <p><strong>ID:</strong> {{ $car['id'] }}</p>
             <p><strong>Nome:</strong> {{ $car['nome'] }}</p>
-            <p><strong>Marca:</strong> {{ $car['marca'] }}</p>
+            <p><strong>Marca:</strong> {{ $car['marca'] }}</p> 
             <p><strong>Modelo:</strong> {{ $car['modelo'] }}</p>
         </div>
         <div class="text-center mt-3">
