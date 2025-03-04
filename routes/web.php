@@ -16,3 +16,4 @@ Route::resource('produtos', ProductController::class);
 
 Route::resource('carros', CarController::class);
 
+   
