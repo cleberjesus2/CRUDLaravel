@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # ControllerLaravel
 =======
 <<<<<<< HEAD
@@ -72,3 +73,6 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 >>>>>>> 1b677d3 (Commit do Projeto)
 >>>>>>> 8536520 (Commit do Projeto)
+=======
+# ControllerLaravel
+>>>>>>> ce1f0ac2b7ff87935b5918364e07c5cccfb5d252
