@@ -18,6 +18,6 @@
             <a href="{{ route('carros.index') }}" class="btn btn-primary">Voltar</a>
             <a href="{{ route('carros.edit', $car['id']) }}" class="btn btn-warning">Editar</a>
         </div>
-    </div>
+    </div>  
 </body>
 </html>
