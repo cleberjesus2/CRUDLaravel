@@ -26,7 +26,7 @@
                 <button type="submit" class="btn btn-success">Cadastrar</button>
                 <a href="{{ route('produtos.index') }}" class="btn btn-secondary">Cancelar</a>
             </div>
-        </form>
+        </form> 
     </div>
 </body>
 </html>
