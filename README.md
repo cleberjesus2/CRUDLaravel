@@ -4,9 +4,9 @@
 Este projeto é uma aplicação Laravel que demonstra o uso de rotas e controllers para implementar um CRUD (Criar, Ler, Atualizar e Deletar) para três recursos: **Produtos**, **Usuários** e **Carros**. A aplicação não se conecta a um banco de dados.
 ## Recursos
 
-- **Produtos**: Gerencia informações sobre produtos.
-- **Usuários**: Gerencia informações sobre usuários.
-- **Carros**: Gerencia informações sobre categorias de produtos.
+- **Produtos**: Gerencia informações sobre Produtos.
+- **Usuários**: Gerencia informações sobre Usuários.
+- **Carros**: Gerencia informações sobre Carros.
 
 ## Estrutura do Projeto
 - **Rotas**: Definidas em routes/web.php.
