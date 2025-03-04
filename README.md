@@ -20,7 +20,7 @@ Este projeto é uma aplicação Laravel que demonstra o uso de rotas e controlle
 
 Para instalar e executar este projeto, siga os passos abaixo:
 
-bash
+
 1. Clone o Repositório: 
 
    git clone https://github.com/cleberjesus2/ControllerLaravel.git
