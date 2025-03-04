@@ -9,9 +9,9 @@ Este projeto é uma aplicação Laravel que demonstra o uso de rotas e controlle
 - **Carros**: Gerencia informações sobre Carros.
 
 ## Estrutura do Projeto
-- **Rotas**: Definidas em routes/web.php.
-- **Controllers**: Localizados em app/Http/Controllers.
-- **Views**: Localizadas em resources/views.  
+- **Rotas**: Definidas em `routes/web.php`.
+- **Controllers**: Localizados em `app/Http/Controllers`.
+- **Views**: Localizadas em `resources/views`.
 
 
 ## Instalação
