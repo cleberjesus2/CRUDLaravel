@@ -25,7 +25,7 @@
             <tbody>
                 @forelse($users as $user)
                     <tr class="text-center">
-                        <td>{{ $user['id'] }}</td>
+                        <td>{{ $user['id'] }}</td> 
                         <td>{{ $user['nome'] }}</td>
                         <td>{{ $user['email'] }}</td>
                         <td>
