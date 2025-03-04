@@ -1,9 +1,9 @@
 # Laravel CRUD Controller
 
 ## Descrição
-Este projeto é uma aplicação Laravel que demonstra o uso de rotas e controllers para implementar um CRUD (Criar, Ler, Atualizar e Deletar) para três recursos: **Produtos**, **Usuários** e **Carros**. A aplicação não se conecta a um banco de dados, mas sim gera informações falsas diretamente nos métodos dos controllers.
-
+Este projeto é uma aplicação Laravel que demonstra o uso de rotas e controllers para implementar um CRUD (Criar, Ler, Atualizar e Deletar) para três recursos: **Produtos**, **Usuários** e **Carros**. A aplicação não se conecta a um banco de dados.
 ## Recursos
+
 - **Produtos**: Gerencia informações sobre produtos.
 - **Usuários**: Gerencia informações sobre usuários.
 - **Carros**: Gerencia informações sobre categorias de produtos.
@@ -14,8 +14,6 @@ Este projeto é uma aplicação Laravel que demonstra o uso de rotas e controlle
 - **Views**: Localizadas em resources/views.  
 
 
-   
-   cd ControllerLaravel
 ## Instalação
 
 Para instalar e executar este projeto, siga os passos abaixo:
@@ -24,10 +22,11 @@ Para instalar e executar este projeto, siga os passos abaixo:
 1. Clone o Repositório: 
 
    git clone https://github.com/cleberjesus2/ControllerLaravel.git
+   
    cd ControllerLaravel
 
 
-2. Instale as dependências do Laravel:
+3. Instale as dependências do Laravel:
 
 
 Run
@@ -36,7 +35,7 @@ composer install
     
 3. Inicie o servidor embutido do Laravel:
 
-bash
+
 Run
 Copy code
 php artisan serve
