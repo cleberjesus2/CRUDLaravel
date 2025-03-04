@@ -27,7 +27,7 @@
                 <button type="submit" class="btn btn-success">Atualizar</button>
                 <a href="{{ route('carros.index') }}" class="btn btn-secondary">Cancelar</a>
             </div>
-        </form>
+        </form> 
     </div> 
 </body>
 </html>
