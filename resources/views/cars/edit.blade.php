@@ -28,6 +28,6 @@
                 <a href="{{ route('carros.index') }}" class="btn btn-secondary">Cancelar</a>
             </div>
         </form>
-    </div>
+    </div> 
 </body>
 </html>
