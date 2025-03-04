@@ -29,13 +29,13 @@ Para instalar e executar este projeto, siga os passos abaixo:
 3. Instale as dependências do Laravel:
 
 
-Run
-Copy code
-composer install
+- Run
+- Copy code
+- composer install
     
 3. Inicie o servidor embutido do Laravel:
 
 
-Run
-Copy code
-php artisan serve
+- Run
+- Copy code
+- php artisan serve
