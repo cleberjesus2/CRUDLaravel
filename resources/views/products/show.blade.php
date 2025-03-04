@@ -18,7 +18,7 @@
             <a href="{{ route('produtos.index') }}" class="btn btn-primary">Voltar</a>
             <a href="{{ route('produtos.edit', $product['id']) }}" class="btn btn-warning">Editar</a>
         </div>
-    </div>
+    </div> 
 </body>
 </html>
  
