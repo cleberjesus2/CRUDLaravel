@@ -52,7 +52,7 @@ class CarController extends Controller
 
    
     public function edit($id)
-    {
+    { 
         $cars = session('cars', []);
         $car = collect($cars)->firstWhere('id', (int)$id);
 
