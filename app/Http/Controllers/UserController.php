@@ -8,7 +8,7 @@ class UserController extends Controller
 {
         
     public function index()
-    {
+    {  
         $users = session('users', []); 
         return view('users.index', compact('users'));
     }
