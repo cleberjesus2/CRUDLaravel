@@ -18,9 +18,9 @@
             <div class="mb-3">
                 <label for="email" class="form-label">Email:</label>
                 <input type="email" name="email" id="email" class="form-control" value="{{ $user['email'] }}" required>
-            </div>
+            </div> 
             <div class="text-center">
-                <button type="submit" class="btn btn-success">Atualizar</button>
+                <button type="submit" class="btn btn-success">Atualizar</button> 
                 <a href="{{ route('usuarios.index') }}" class="btn btn-secondary">Cancelar</a>
             </div>
         </form>
