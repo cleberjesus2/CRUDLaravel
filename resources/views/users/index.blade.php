@@ -21,7 +21,7 @@
                     <th>Email</th>
                     <th>Ações</th>
                 </tr>
-            </thead>
+            </thead>   
             <tbody>
                 @forelse($users as $user)
                     <tr class="text-center">
