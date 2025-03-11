@@ -30,15 +30,5 @@
     </div>
 </body>
 </html>
-<div class="mb-3">
-    <label for="ano" class="form-label">Ano:</label>
-    <input type="number" name="ano" id="ano" class="form-control" required>
-</div>
-<div class="mb-3">
-    <label for="cor" class="form-label">Cor:</label>
-    <input type="text" name="cor" id="cor" class="form-control" required>
-</div>
-<div class="mb-3">
-    <label for="placa" class="form-label">Placa:</label>
-    <input type="text" name="placa" id="placa" class="form-control" required>
+
 </div>
