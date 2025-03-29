@@ -2,103 +2,79 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Car; 
 use Illuminate\Http\Request;
 
 class CarController extends Controller
 {
-  
     public function index()
     {
-        $cars = session('cars', []);   
+        $cars = Car::all();
         return view('cars.index', compact('cars'));
     }
 
-    
     public function create()
     {
         return view('cars.create');
     }
 
-   
     public function store(Request $request)
     {
-        $cars = session('cars', []);
+       
+        $request->validate([
+            'nome' => 'required|string|max:255',
+            'marca' => 'required|string|max:255',
+            'modelo' => 'required|string|max:255',
+        ]);
 
-        $newCar = [
-            'id'    => count($cars) + 1,
-            'nome'  => $request->input('nome'),
+ 
+        Car::create([
+            'nome' => $request->input('nome'),
             'marca' => $request->input('marca'),
-            'modelo'=> $request->input('modelo'),
-        ];
-
-        $cars[] = $newCar;
-        session(['cars' => $cars]);
+            'modelo' => $request->input('modelo'),
+        ]);
 
         return redirect()->route('carros.index')->with('success', 'Carro criado com sucesso!');
     }
 
-    
     public function show($id)
     {
-        $cars = session('cars', []);
-        $car = collect($cars)->firstWhere('id', (int)$id);
-
-        if (!$car) {
-            return redirect()->route('carros.index')->with('error', 'Carro não encontrado!');
-        }
-
+        $car = Car::findOrFail($id);
         return view('cars.show', compact('car'));
     }
 
-   
     public function edit($id)
-    { 
-        $cars = session('cars', []);
-        $car = collect($cars)->firstWhere('id', (int)$id);
-
-        if (!$car) {
-            return redirect()->route('carros.index')->with('error', 'Carro não encontrado!');
-        }
-
+    {
+        $car = Car::findOrFail($id); 
         return view('cars.edit', compact('car'));
     }
 
-   
     public function update(Request $request, $id)
     {
-        $cars = session('cars', []);
+        $car = Car::findOrFail($id);
 
-        foreach ($cars as $key => $car) {
-            if ($car['id'] == $id) {
-                $cars[$key]['nome']  = $request->input('nome');
-                $cars[$key]['marca'] = $request->input('marca');
-                $cars[$key]['modelo']= $request->input('modelo');
-                break;
-            }
-        }
+      
+        $request->validate([
+            'nome' => 'required|string|max:255',
+            'marca' => 'required|string|max:255',
+            'modelo' => 'required|string|max:255',
+        ]);
 
-        session(['cars' => $cars]);
+       
+        $car->update([
+            'nome' => $request->input('nome'),
+            'marca' => $request->input('marca'),
+            'modelo' => $request->input('modelo'),
+        ]);
 
         return redirect()->route('carros.index')->with('success', 'Carro atualizado com sucesso!');
     }
 
-    
     public function destroy($id)
     {
-        $cars = session('cars', []);
-
-        foreach ($cars as $key => $car) {
-            if ($car['id'] == $id) {
-                unset($cars[$key]);
-                break;
-            }
-        }
-
-       
-        $cars = array_values($cars);
-        session(['cars' => $cars]);
+        $car = Car::findOrFail($id);
+        $car->delete();
 
         return redirect()->route('carros.index')->with('success', 'Carro removido com sucesso!');
-    
     }
 }
