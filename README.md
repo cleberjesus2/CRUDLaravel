@@ -24,7 +24,7 @@ Para instalar e executar este projeto, siga os passos abaixo:
 
    git clone https://github.com/cleberjesus2/CRUDLaravel.git
    
-   cd ControllerLaravel
+   cd CRUDLaravel
 
 
 3. Instale as dependências do Laravel:
@@ -34,7 +34,7 @@ Para instalar e executar este projeto, siga os passos abaixo:
 
 
 4. Configure o Arquivo .env
- - Obs: Se não houver o .env ao clonar o projeto, copie  e cole o arquivo ".env.example" e renomeie para ".env") e configure o Banco de dados;
+ - Obs: Se não houver o .env ao clonar o projeto, copie  e cole o arquivo ".env.example" e renomeie para ".env") e configure o Banco de dados:
 ```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
