@@ -35,8 +35,8 @@ Para instalar e executar este projeto, siga os passos abaixo:
 
 
 4. Configure o Arquivo .env
- - Obs: Se não houver ao clonar o projeto, copie o arquivo ".env.examplecrie" e renomeie para ".env") e configure o Banco de dados;
-
+ - Obs: Se não houver o .env ao clonar o projeto, copie  e cole o arquivo ".env.example" e renomeie para ".env") e configure o Banco de dados;
+```bash
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -44,7 +44,9 @@ DB_DATABASE=seu_banco
 DB_USERNAME=seu_usuario
 DB_PASSWORD=sua_senha
 
+```
 
 5. Inicie o servidor embutido do Laravel:
+
 
 - php artisan serve
