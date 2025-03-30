@@ -22,7 +22,7 @@ Para instalar e executar este projeto, siga os passos abaixo:
 
 1. Clone o Repositório: 
 
-   git clone https://github.com/cleberjesus2/ControllerLaravel.git
+   git clone https://github.com/cleberjesus2/CRUDLaravel.git
    
    cd ControllerLaravel
 
@@ -30,8 +30,6 @@ Para instalar e executar este projeto, siga os passos abaixo:
 3. Instale as dependências do Laravel:
     
 
-- Run
-- Copy code
 - composer install
 
 
