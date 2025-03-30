@@ -12,7 +12,8 @@ Este projeto é um reaproveitamento da ultima atividade, contendo um CRUD com co
 - **Rotas**: Definidas em `routes/web.php`.
 - **Controllers**: Localizados em `app/Http/Controllers`.
 - **Views**: Localizadas em `resources/views`.
-
+- **Models**: Localizadas em `App/Models`.
+- **Migrations**: Localizadas em `database/migrations`.
 
 ## Instalação
 
